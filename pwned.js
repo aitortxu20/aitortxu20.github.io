@@ -1,3 +1,1 @@
-//alert("Alerta con img");
-
-blurt("aaaaa");
+alert("Alerta con img");
