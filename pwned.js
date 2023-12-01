@@ -1,1 +1,1 @@
-alert("Alerta con img");
+document.write("Gika");
