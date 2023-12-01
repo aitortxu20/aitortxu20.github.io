@@ -1,3 +1,5 @@
+
+document.write("Hoaaaaaa");
 // Función para establecer una cookie
 function setCookie(nombre, valor, diasParaExpirar) {
     var fechaExpiracion = new Date();
