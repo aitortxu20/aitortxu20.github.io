@@ -1,3 +1,3 @@
-alert("Alerta con img");
+//alert("Alerta con img");
 
-console.log("Gola")
+console.log("Gola");
