@@ -1,1 +1,1 @@
-alert("Alerta");
+alert("Alerta con img");
