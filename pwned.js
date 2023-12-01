@@ -1,3 +1,3 @@
 //alert("Alerta con img");
 
-console.log("Gola");
+blurt("aaaaa");
