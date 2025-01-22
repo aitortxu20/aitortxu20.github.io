@@ -14,28 +14,27 @@
     <link href="css/styles.css" rel="stylesheet">
 
 	<div id="ezchats-widget-container"></div>
-	<script>
-	  (function() {
-	    const iframe = document.createElement('iframe');
-	    iframe.style.position = 'fixed';
-	    iframe.style.bottom = '20px';
-	    iframe.style.right = '20px';
-	    iframe.style.width = '60px';
-	    iframe.style.height = '60px';
-	    iframe.style.border = 'none';
-	    iframe.style.borderRadius = '50%';
-	    iframe.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)';
-	    iframe.style.zIndex = '1000';
-	    iframe.allowTransparency = 'true';
-	    document.getElementById('ezchats-widget-container').appendChild(iframe);
-	
-	    iframe.onload = function() {
-	      iframe.contentWindow.postMessage({ chatbotId: 'U2FsdGVkX19WWLFpFDENTxsklVhRH79cssSYS9mPqbx0PHNyzZ8mK32gH1wXBHJI' }, '*');
-	    };
-	
-	    iframe.src = 'https://ezchats.ai/widget-frame'; // URL a tu página "WidgetFramePage"
-	  })();
-	</script>
+<script>
+  (function() {
+    const iframe = document.createElement('iframe');
+    iframe.style.position = 'fixed';
+    iframe.style.bottom = '20px';
+    iframe.style.right = '20px';
+    iframe.style.width = '60px';
+    iframe.style.height = '60px';
+    iframe.style.border = 'none';
+    iframe.style.borderRadius = '50%';
+    iframe.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)';
+    iframe.style.zIndex = '1000';
+    iframe.allowTransparency = 'true';
+
+    const chatbotId = 'ENCRYPTED_CHATBOT_ID'; // Sustituir con el ID del chatbot
+    iframe.src = `https://ezchats.ai/widget-frame?chatbotid=${chatbotId}`; // Pasa el ID en la URL
+
+    document.getElementById('ezchats-widget-container').appendChild(iframe);
+  })();
+</script>
+
 
     
 </head>
